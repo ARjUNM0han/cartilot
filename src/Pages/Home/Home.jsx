@@ -47,7 +47,10 @@ function Home() {
       </Carousel>
       <section className="py-5">
         {loading ? (
-          <div className="hourglass"></div>
+          <div className='text-center d-flex flex-column align-items-center my-5'>
+            <h1 class="title ">Loading</h1>
+            <div class="rainbow-marker-loader"></div>
+          </div>
         ) : (
           <div>
             {products.length > 0 ? (
